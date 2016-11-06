@@ -1,0 +1,16 @@
+This is a skeleton for CS 111 Lab 1.
+
+Replace this README file with notes on your implementation.
+Mentions any special features or limitations.
+
+Student 1: Wenhao Yu, 104 218 636
+Student 2: Kaiwen huang, 204 171 803
+
+We added parallel execution to the execution function. It first will preempt
+the functions which put all sequence functions into a command list in order it
+appears. Then it will start to execute functions from the beginning of the
+list. Once a dependence is detected, the function will block until all the
+resource allocated by previous function to be released and start to try
+parallel again.
+
+
